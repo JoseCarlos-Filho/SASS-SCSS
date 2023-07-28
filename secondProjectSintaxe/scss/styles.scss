@@ -2,6 +2,9 @@ $bg-color: #EEE;
 $title-backgroung: #333;
 $main-color: #FFF;
 
+$bg-middle: #6e6d6d;
+$font-color: #d9d1fc; 
+
 .container {
     background-color: $bg-color;
     padding: 2rem;
@@ -12,4 +15,34 @@ $main-color: #FFF;
     color: $main-color;
     text-align: center;
     padding: 1rem;
+}
+
+.container-middle {
+    background: $bg-middle;
+    color: $font-color;
+    text-align: center;
+}
+
+h2 {
+    padding-top: 0.5em;
+}
+
+ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    /* For IE, the outcast */
+    zoom:1;
+    *display: inline;
+}
+
+li {
+    padding: 2px 5px;
+    border: 1px solid black;   
+    margin: 1em;
+}
+
+a {
+    text-decoration-color: #f5a8ca;
+    color: $font-color;   
 }
