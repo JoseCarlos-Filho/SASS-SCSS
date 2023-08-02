@@ -1,3 +1,10 @@
+@charset "UTF-8";
+/* Variaveis de definição dos estilos
+ *  * variaveis de cor
+ *  * variaveis de sombras
+ *  * variaveis de bordas
+ *  * aplicaveis até o momento */
+/*! Estilos do container */
 .container {
   background-color: #111;
   padding: 1em;
@@ -20,6 +27,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.container-bottom {
+  background-color: #4b4a4a;
+  text-align: center;
+  padding: 50px;
+}
+.container-bottom h3 {
+  color: #ddd;
 }
 
 /*# sourceMappingURL=styles.css.map */
