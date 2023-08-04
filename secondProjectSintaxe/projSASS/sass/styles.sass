@@ -24,7 +24,7 @@ $radius: 1rem
     #title 
         color: $title-color
     
-    #content
+    &-content
         color: $title-color-desc
         text-align: center
         text-shadow: $shadow
@@ -38,19 +38,36 @@ $radius: 1rem
 
 .container-middle
 
+    display: flex
+    justify-content: center
+
     h2
         color: #066616
     
     li
-        color: #4c0457
+        padding: 5px
+        list-style-type: none
+        
         a
+            text-decoration: none
             color: #4c0457 
+            transition: .5s
+            padding: 10px
+            border: 1px solid #9c09b3
+            border-radius: 5px
+            display: block
+            width: 150px
+            text-align: center
+
+            &:hover
+                background-color: #5e5d5d
+                color: #f82f2f
 
     ol
         > li
-            color: #ee500c
-            a
-                color: #ee500c 
+            color: #ee500c 
+            list-style-type: upper-roman
+                
 
 article, main
     background: #ddd
@@ -72,4 +89,25 @@ main
     padding: 50px
 
     h3
-        color: #ddd 
+        color: #ddd
+
+.spacing
+    padding: 200px
+    background-color: #6a6969
+
+.btn
+    margin: 0.5em
+    padding: 10px 20px
+    border: 1px solid #3207f4
+    border-radius: 5px
+    color: #fff
+    background-color: #1a0767 
+    cursor: pointer
+
+    &-success
+        background-color: #0dd159
+        border-color: #0dd159
+    
+    &-danger
+        background-color: #db1515
+        border-color: #db1515
