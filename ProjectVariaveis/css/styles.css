@@ -1,0 +1,26 @@
+h1 {
+  color: #7265bc;
+}
+
+p {
+  color: #7265bc;
+}
+
+a {
+  color: #7265bc;
+}
+
+div p {
+  background-color: #585858;
+  color: #fff;
+}
+div p span {
+  color: #f80808;
+  border-bottom: 2px groove #0606f0;
+}
+
+h2 {
+  color: #202020;
+}
+
+/*# sourceMappingURL=styles.css.map */
