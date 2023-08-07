@@ -1,0 +1,28 @@
+// Variaveis de escopo global
+$text-color: #7265bc
+$bg-color: #585858
+$h2-color: #202020
+
+h1
+    color: $text-color
+
+p
+    color: $text-color
+
+a
+    color: $text-color
+
+div
+    p
+        //variaveis de escopo local
+        $font-color: #fff
+        $font2-color: #f80808
+        background-color: $bg-color
+        color: $font-color
+
+        span
+            color: $font2-color
+            border-bottom: 2px groove #0606f0
+
+h2
+    color: $h2-color
