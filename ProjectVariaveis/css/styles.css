@@ -11,12 +11,13 @@ a {
 }
 
 div p {
-  background-color: #585858;
+  background-color: #4c4949;
+  padding: 0.5em;
   color: #fff;
 }
 div p span {
   color: #f80808;
-  border-bottom: 2px groove #0606f0;
+  border-bottom: 2px groove #f2f2f8;
 }
 
 h2 {
