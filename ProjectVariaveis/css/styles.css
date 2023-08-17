@@ -24,4 +24,17 @@ h2 {
   color: #202020;
 }
 
+.container {
+  background-color: #ccc;
+  padding: 20px;
+  margin: 20px;
+}
+.container-content {
+  color: #b90202;
+}
+
+.spacing {
+  padding: 200px;
+}
+
 /*# sourceMappingURL=styles.css.map */
