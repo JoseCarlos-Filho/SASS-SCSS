@@ -8,6 +8,10 @@ h1
 
 p
     color: $text-color
+    border: $border
+    font-size: $main-font
+    margin: #{$mx + 10px}
+    padding: #{$px + $py}
 
 a
     color: $text-color
@@ -17,9 +21,12 @@ div
         //variaveis de escopo local
         $font-color: #fff
         $font2-color: #f80808
+        // shadowing -> utilizando o mesmo nome de variavel em escopos diferentes
+        $border: 3px dotted green
         background-color: $bg-color
         padding: 0.5em
         color: $font-color
+        border: $border
 
         span
             color: $font2-color
