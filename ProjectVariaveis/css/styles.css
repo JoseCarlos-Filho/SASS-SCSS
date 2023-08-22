@@ -1,9 +1,14 @@
 h1 {
   color: #7265bc;
+  border: 2px solid #ff0303;
 }
 
 p {
   color: #7265bc;
+  border: 2px solid #ff0303;
+  font-size: 3rem;
+  margin: 12px;
+  padding: 16px;
 }
 
 a {
@@ -14,6 +19,7 @@ div p {
   background-color: #4c4949;
   padding: 0.5em;
   color: #fff;
+  border: 3px dotted green;
 }
 div p span {
   color: #f80808;
@@ -30,11 +36,7 @@ h2 {
   margin: 20px;
 }
 .container-content {
-  color: #b90202;
-}
-
-.spacing {
-  padding: 200px;
+  color: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */
