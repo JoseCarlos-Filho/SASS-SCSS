@@ -1,0 +1,37 @@
+@import 'variables'
+@import 'button'
+@import 'mixins'
+
+body
+    margin: 20px
+
+.p-esp
+    @include special
+
+h2
+    @include special
+    @include green
+
+.esp-menor
+    @include espacamento(10px, 10px)
+    @include custom-border(solid, #f40707)  
+    // border: 1px solid #f40707
+
+.esp-medio
+    @include espacamento(15px, 15px)
+    @include custom-border(dotted, #0619ef, 5px)
+    // border: 1px solid #0619ef
+
+.esp-maior
+    @include espacamento(25px, 25px)
+    @include custom-border(solid, #059f12)
+    // border: 1px solid #059f12
+
+.esp-maior-ainda
+    $pad: 50px
+    $mag: 50px
+    @include espacamento($pad, $mag)
+    @include custom-border(double, gold, 3px)
+    // border: 1px solid gold
+
+
