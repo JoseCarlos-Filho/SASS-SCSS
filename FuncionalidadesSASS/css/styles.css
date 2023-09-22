@@ -5,6 +5,12 @@
   border-radius: 5px;
 }
 
+.esp-maior-ainda, .esp-maior, .esp-medio, .esp-menor {
+  font-size: 2rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+
 body {
   margin: 20px;
 }
@@ -63,6 +69,45 @@ h2:hover {
   border: 3px double purple;
   color: gold;
   background-color: #fff;
+}
+
+.container-menor {
+  width: 402px;
+  border: 1px solid red;
+}
+
+.container-maior {
+  width: 100rem;
+  border: 2px solid green;
+}
+
+.fonte-pequena {
+  font-size: 8px;
+  color: blue;
+  border: 3px dotted gold;
+}
+
+.fonte-grande {
+  font-size: 25px;
+  color: red;
+  border: 3px dotted gold;
+}
+
+.content-1 {
+  width: 100px;
+  background-color: #f80808;
+}
+
+.content-2 {
+  width: 500px;
+  background-color: #075e25;
+}
+
+.content-3 {
+  width: 80px;
+  padding: 20px;
+  background-color: #2506a0;
+  background-color: blue;
 }
 
 /*# sourceMappingURL=styles.css.map */
