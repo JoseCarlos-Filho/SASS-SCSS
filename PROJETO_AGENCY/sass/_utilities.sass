@@ -27,6 +27,18 @@
     margin-top: 2rem
     text-align: center
 
+%center-bg //centraliza imagens de fundo
+    background-size: cover
+    background-position: center
+
+%card-hover //hover do card
+    .job-card-title, .job-card-cover, .job-card-description
+        opacity: 0
+
+    &:hover
+        .job-card-title, .job-card-cover, .job-card-description
+            opacity: 1
+
 // Componentes Botões BTNS
 .btn
     padding: .6rem 1rem
