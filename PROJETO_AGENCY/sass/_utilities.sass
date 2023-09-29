@@ -18,6 +18,14 @@
     &:hover
         color: $primary-color
 
+
+// MOBILE responsividade da aplicação
+@mixin mobile
+    @media (max-width: 426px)
+        @content
+        
+
+
 // Placeholder Selector shadow do titulo do banner
 %title-text-shadow
     text-shadow: 3px 2px $black
