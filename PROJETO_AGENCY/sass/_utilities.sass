@@ -16,14 +16,7 @@
     transition: .3s
 
     &:hover
-        color: $primary-color
-
-
-// MOBILE responsividade da aplicação
-@mixin mobile
-    @media (max-width: 426px)
-        @content
-        
+        color: $primary-color       
 
 
 // Placeholder Selector shadow do titulo do banner
@@ -71,3 +64,8 @@
         margin-top: 1rem
         border-radius: 2rem
         padding: 1rem 1.5rem
+
+// MOBILE responsividade da aplicação
+@mixin mobile
+    @media (max-width: 426px)
+        @content
