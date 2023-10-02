@@ -16,7 +16,19 @@
     transition: .3s
 
     &:hover
-        color: $primary-color       
+        color: $primary-color
+
+// MOBILE mixin card responsividade
+@mixin card-mobile
+    width: 100%
+    height: 200px
+    margin: 0
+    margin-bottom: 2rem
+
+// MOBILE responsividade da aplicação
+@mixin mobile
+    @media (max-width: 425px)
+        @content      
 
 
 // Placeholder Selector shadow do titulo do banner
@@ -35,6 +47,9 @@
 %card-hover //hover do card
     .job-card-title, .job-card-cover, .job-card-description
         opacity: 0
+
+        @include mobile
+            opacity: 1
 
     &:hover
         .job-card-title, .job-card-cover, .job-card-description
@@ -64,8 +79,3 @@
         margin-top: 1rem
         border-radius: 2rem
         padding: 1rem 1.5rem
-
-// MOBILE responsividade da aplicação
-@mixin mobile
-    @media (max-width: 426px)
-        @content
