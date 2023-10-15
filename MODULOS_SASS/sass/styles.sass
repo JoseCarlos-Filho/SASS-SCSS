@@ -1,0 +1,104 @@
+@use 'sass:color'
+@use 'sass:list'
+@use 'sass:map'
+
+// trabalhando com Modulo color
+
+$color-adjust: color.adjust(#6b717f, $red: 10)
+$color-adjust-2: color.adjust(#6b717f, $red: 25, $blue: 110)
+
+.color-1
+    color: $color-adjust
+    background-color: $color-adjust-2
+
+@debug color.blue($color-adjust)
+@debug color.blue($color-adjust-2)
+
+$color-scale: color.scale($color-adjust-2, $lightness: -40%)
+$color-scale-2: color.scale($color-adjust-2, $lightness: 40%)
+
+.color-2
+    background-color: $color-scale
+
+.color-3
+    background-color: $color-scale-2
+
+.color-4
+    background-color: color.invert($color-scale-2)
+
+.color-5
+    background-color: color.mix(#123123, #4f2f3f)
+
+.color-6
+    background-color: desaturate(#4f1f33, 20%)
+
+.color-7
+    background-color: #4f1f33
+
+    &:hover
+        background-color: lighten(#4f1f33, 60%)
+
+// Modulo Listas
+
+$lista: 10px, 20px, 30px
+
+@debug $lista
+
+$lista: list.append($lista, 40px)
+
+@debug $lista
+
+@debug list.index($lista, 10px)
+
+@debug list.index($lista, 50px)
+
+@if list.index($lista, 10px) == 1
+    $lista: list.append($lista, 50px)
+
+@debug $lista
+
+$lista2: 60px, 70px, 80px, 90px, 100px
+
+$lista3: list.join($lista, $lista2)
+
+@debug $lista3
+
+@debug list.length($lista)
+
+@debug list.length($lista3)
+
+@debug list.nth($lista, 3)
+@debug list.nth($lista3, 6)
+
+$font-size-title: list.nth($lista3, 4)
+
+@debug $font-size-title
+
+h1
+    font-size: $font-size-title
+
+// Modulo map
+
+$m: ('font': 3px, 'color': blue, 'bold': false)
+$n: ('border': 2px solid red, 'transition': 1s)
+
+@debug $m
+@debug $n
+
+$x: map.merge($m, $n)
+
+@debug $x
+
+$border-title: map.get($x, 'border')
+
+h1
+    border: $border-title
+
+@debug $border-title
+
+@debug map.has-key($x, 'transition')
+@debug map.has-key($x, 'teste')
+
+@if map.has-key($x, 'transition')
+    h1
+        transition: map.get($x, 'transition')
