@@ -3,6 +3,7 @@
 @use 'sass:map'
 @use 'sass:math'
 @use 'sass:meta'
+@use 'sass:string'
 
 // trabalhando com Modulo color
 
@@ -147,3 +148,17 @@ $a: 1, 2, 3, 4, 5
 @debug meta.type-of('string')
 @debug meta.type-of(#fff)
 @debug meta.type-of(bold)
+
+// Módulo SASS String
+
+$frase: "O rato roeu a roupa do rei de Roma"
+@debug string.index($frase, 'rei') // posição da palavra rei
+@debug string.index($frase, 'Brasil')
+
+@debug string.length($frase) // tamanho total da string
+
+@debug string.to-lower-case($frase) // transforma a string em letras minúsculas
+@debug string.to-upper-case($frase) // transforma a string em letras maiusculoas
+
+@debug string.unique-id()
+@debug string.unique-id()
