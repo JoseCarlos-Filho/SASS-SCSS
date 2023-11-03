@@ -2,6 +2,7 @@
 @use '../1-base/base-mixins'
 @use 'layouts-mixins'
 
+// Estilos Header ( Header-Top )
 .header
     background-color: variables.$bg-color
 
@@ -21,3 +22,41 @@
 
             a
                 color: variables.$light-color
+
+// Estilos Header ( Main-Header )
+.main-header
+
+    &-container
+        @include layouts-mixins.center-content
+        padding: 1.3rem 0
+
+        a, span, i
+            color: #fff
+        
+        #brand
+            font-weight: 900
+            font-size: 3rem
+
+            i
+                color: variables.$primary-color
+                font-size: 2rem
+        
+        #search-form
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 45%
+
+            input
+                height: 40px
+
+            #search
+                @include layouts-mixins.rounded-input
+                width: 60%
+
+        .header-actions-menu
+            display: flex
+            align-items: center
+
+            .wishlist-container, .header-cart-container
+                @include layouts-mixins.header-icon
